@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>
+      This example requires you to enter commands in your browser's JavaScript
+      console (see
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools"
+        >What are browser developer tools</a
+      >
+      for more information).
+    </p>
+  </body>
+
+  <script>
+    const person = {
+      name: {
+        first: "Bob",
+        last: "Smith",
+      },
+      age: 32,
+      gender: "male",
+      interests: ["music", "skiing"],
+      bio: function () {
+        alert(
+          this.name[0] +
+            " " +
+            this.name[1] +
+            " is " +
+            this.age +
+            " years old. He likes " +
+            this.interests[0] +
+            " and " +
+            this.interests[1] +
+            "."
+        );
+      },
+      greeting: function () {
+        alert("Hi! I'm " + this.name[0] + ".");
+      },
+    };
+
+    let myDataName = "height";
+    let myDataValue = "1.75m";
+    person[myDataName] = myDataValue;
+
+    let bandInfo;
+
+    // Put your code here
+    const band = {
+      name: "FooFighters",
+      nationality: "American",
+      genre: "rock",
+      members: [
+        "Dave Grohl",
+        " Taylor Hawkins",
+        " Pat Smear",
+        " Nate Mendel",
+        " Rami Jaffee",
+      ],
+      formed: "1994",
+      split: false,
+      albums: [
+        {
+          name: "Medicine at Midnight",
+          released: "2021",
+        },
+        {
+          name: "Concrete and Gold",
+          released: "2017",
+        },
+      ],
+
+      bandInfo: function () {
+        alert(
+          this.name +
+            " are an " +
+            this.nationality +
+            " " +
+            this.genre +
+            " band, consisting of members " +
+            this.members +
+            ". The band formed in " +
+            this.formed +
+            ". Some of their albums include " +
+            this.albums[0].name +
+            ", released in " +
+            this.albums[0].released +
+            " and " +
+            this.albums[1].name +
+            ", released in " +
+            this.albums[1].released +
+            "."
+        );
+      },
+    };
+
+    // Don't edit the code below here
+
+    let para1 = document.createElement("p");
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+</html>
