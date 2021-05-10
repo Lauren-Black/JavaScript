@@ -25,4 +25,5 @@ const backpack = {
   },
 };
 
+// set up this constant for export to be used by any file that imports it (see script.js)
 export default backpack;

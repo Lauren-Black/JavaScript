@@ -1,6 +1,8 @@
 /**
  * Create a Backpack object, populate some HTML to display its properties.
  */
+
+// import backpack constant for backpack.js file. Use the same way it would be used if the constant was written in this file
 import backpack from "./backpack.js";
 
 const markup = (backpack) => {
