@@ -20,3 +20,6 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+// add a console log so that information about the object automatically appears in the console
+console.log("the backpack object:", backpack);
