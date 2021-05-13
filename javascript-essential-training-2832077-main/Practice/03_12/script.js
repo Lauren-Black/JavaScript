@@ -40,7 +40,7 @@
  book1.updateProgress(531,12);
  book1.checkComplete();
 
- console.log("Book1 completion status:", book1.bookFinished);
+ console.log("Book1 updated completion status:", book1.bookFinished);
 
  console.log("Book2 completion status:", book2.checkComplete(), book2.bookFinished);
 
