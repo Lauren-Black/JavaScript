@@ -79,4 +79,4 @@ newNav.innerHTML = navigation;
 
 header.append(newNav);
 
-document.querySelector(".navigation").
+document.querySelector(".navigation");
