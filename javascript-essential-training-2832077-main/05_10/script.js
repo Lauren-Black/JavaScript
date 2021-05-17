@@ -52,15 +52,6 @@ const content = `
   
 `;
 
-const navigation = `
-      <ul>
-        <li class="nav"><a href="#">Home</a></li>
-        <li class="nav"><a href="#">Work</a></li>
-        <li class="nav"><a href="#">Shop</a></li>
-        <li class="nav"><a href="#">About</a></li>
-        <li class="nav"><a href="#">Contact Us</a></li>
-      </ul>
-`;
 
 const main = document.querySelector(".maincontent");
 
@@ -70,6 +61,16 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+const navigation = `
+      <ul>
+        <li class="nav"><a href="#">Home</a></li>
+        <li class="nav"><a href="#">Work</a></li>
+        <li class="nav"><a href="#">Shop</a></li>
+        <li class="nav"><a href="#">About</a></li>
+        <li class="nav"><a href="#">Contact Us</a></li>
+      </ul>
+`;
 
 const header = document.querySelector(".siteheader");
 
