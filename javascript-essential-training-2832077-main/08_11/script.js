@@ -41,6 +41,7 @@ const content = `
       everydayPack.strapLength.right
     } inches</span></li>
     <li class="feature backpack__lid">Lid status:<span> ${
+      // the code below is a conditional statement written using turnery operators. The "?" represents "if true", and the ":" represents "else"
       everydayPack.lidOpen ? "Open" : "Closed"
     }</span></li>
   </ul>
