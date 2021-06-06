@@ -55,6 +55,7 @@ content.forEach((backpack) => {
   main.append(backpack);
 })
 
+console.log(content);
 
 
 
